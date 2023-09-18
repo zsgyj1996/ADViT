@@ -8,6 +8,8 @@ sian mixture density network to pinpoint the regions of anomalies. Extensive exp
 # Network
 The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy). 
 It adapts the trasnformer network for image anomaly detection and localization.
+<div align=center>
 <img src="image/vit.png">
 <img src="image/result.png">
+<\div>
 
