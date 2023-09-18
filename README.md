@@ -11,5 +11,5 @@ It adapts the trasnformer network for image anomaly detection and localization.
 <div align=center>
 <img src="image/vit.png">
 <img src="image/result.png">
-<\div>
+</div>
 
