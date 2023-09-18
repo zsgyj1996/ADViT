@@ -6,6 +6,6 @@
 # Network
 The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy). 
 It adapts the trasnformer network for image anomaly detection and localization.
-<img src="image/visualad.png">
+<img src="image/vit.png">
 <img src="image/result.png">
 
