@@ -17,7 +17,7 @@ Visual anomaly detection and localization are essential tasks in many safety-cri
 
 The left diagram illustrates the overall architecture of our approach, with specific details outlined in the paper. On the right, visualized results showcase our method's anomaly detection capabilities on industrial images.
 The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy).  It adapts the trasnformer network for image anomaly detection and localization.
-# Installation
+## Installation
 ```bash
 $ git clone https://github.com/zsgyj1996/ADViT.git
 $ pip install opencv-python
