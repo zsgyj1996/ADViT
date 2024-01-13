@@ -1,15 +1,22 @@
-# VISION TRANSFORMER WITH ASSOCIATION DISCREPANCY FOR ANOMALY DETECTION
-*Authors - Shuo Zhang, Jing Liu∗
+## A VISION TRANSFORMER NETWORK WITH ASSOCIATION DISCREPANCY FOR IMAGE ANOMALY DETECTION AND LOCALIZATION
+![Static Badge](https://img.shields.io/badge/Apache-blue?style=flat&label=license&labelColor=black&color=blue)
+![Static Badge](https://img.shields.io/badge/passing-green?style=flat&label=build&labelColor=black&color=green)
+![Static Badge](https://img.shields.io/badge/passing-green?style=flat&label=circleci&labelColor=black&color=green)
+![Static Badge](https://img.shields.io/badge/welcome-green?style=flat&label=PRs&labelColor=black&color=green)
+![Static Badge](https://img.shields.io/badge/Python-green?style=flat&label=Language&labelColor=black&color=green)
+## Overview
+<div style="text-align: justify;">
+Visual anomaly detection and localization are essential tasks in many safety-critical real-world scenarios. Our approach involves a transformer network with an association discrepancy, combining elements of patch embedding and a reconstruction-based method. We face challenges in capturing rich associations between abnormal patches and the entire image, as anomalies primarily focus on the adjacent patches. However, the nontrivial associations between normal patches and the entire image can be easily expressed by the self-attention weights of each patch. We use a minimax strategy to amplify this association discrepancy, inherently distinguishing between normal and abnormal patches and preserving the positional information of the split patches, which is then processed by a Gaussian mixture density network to pinpoint the regions of anomalies. Extensive experiments conducted on the industrial inspection dataset demonstrate that the proposed method significantly improves visual anomaly detection and localization performance compared to the competing methods.
+</div>
 
-**Abstract**- *Visual anomaly detection and localization are essential tasks in many safety-critical real-world scenarios. Our approach involves a transformer network with an association discrepancy, combining elements of patch embedding and a reconstruction-based method. We find it difficult to capture rich associations from abnormal patches to the entire image because anomalies primarily focus on their adjacent patches. However, the nontrivial associations between normal patches and the entire image can be easily expressed by the
-self-attention weights of each patch. We use a minimax strategy to amplify this association discrepancy, inherently distinguishing between normal and abnormal patches and preserving the positional information of the split patches, which is then processed by a Gaus-
-sian mixture density network to pinpoint the regions of anomalies. Extensive experiments conducted on the industrial inspection dataset demonstrate that the proposed method significantly improves visual anomaly detection and localization performance compared to the competing methods.*
+## Architecture
+<div style="display:flex; justify-content:space-between;">
+    <img src="image/vit.png" width="50%">
+    <img src="image/result.png" width="45%">
+</div>
 
-# Network
+The left diagram illustrates the overall architecture of our approach, with specific details outlined in the paper. On the right, visualized results showcase our method's anomaly detection capabilities on industrial images.
+## Network
 The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy). 
 It adapts the trasnformer network for image anomaly detection and localization.
-<div align=center>
-<img src="image/vit.png">
-<img src="image/result.png">
-</div>
 
