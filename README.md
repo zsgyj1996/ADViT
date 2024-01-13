@@ -1,5 +1,5 @@
 ## A VISION TRANSFORMER NETWORK WITH ASSOCIATION DISCREPANCY FOR IMAGE ANOMALY DETECTION AND LOCALIZATION
-![Static Badge](https://img.shields.io/badge/Apache-blue?style=flat&label=license&labelColor=black&color=blue)
+![Static Badge](https://img.shields.io/badge/MIT-blue?style=flat&label=license&labelColor=black&color=blue)
 ![Static Badge](https://img.shields.io/badge/passing-green?style=flat&label=build&labelColor=black&color=green)
 ![Static Badge](https://img.shields.io/badge/passing-green?style=flat&label=circleci&labelColor=black&color=green)
 ![Static Badge](https://img.shields.io/badge/welcome-green?style=flat&label=PRs&labelColor=black&color=green)
@@ -16,7 +16,35 @@ Visual anomaly detection and localization are essential tasks in many safety-cri
 </div>
 
 The left diagram illustrates the overall architecture of our approach, with specific details outlined in the paper. On the right, visualized results showcase our method's anomaly detection capabilities on industrial images.
-## Network
-The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy). 
-It adapts the trasnformer network for image anomaly detection and localization.
+The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=YicbFdNTTy).  It adapts the trasnformer network for image anomaly detection and localization.
+# Installation
+```bash
+$ git clone https://github.com/tbcvContributor/DeepHawkeye.git
+$ pip install opencv-python
+$ pip install scipy
 
+# pytorch
+$ pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+
+#install faiss
+# CPU-only version（currently available on Linux, OSX, and Windows）
+$ conda install -c pytorch faiss-cpu
+# GPU(+CPU) version （containing both CPU and GPU indices, is available on Linux systems）
+$ conda install -c pytorch faiss-gpu
+# or for a specific CUDA version
+$ conda install -c pytorch faiss-gpu cudatoolkit=10.2 # for CUDA 10.2 
+```
+
+## Datasets
+**MVTec Dataset** - Real world anomaly dataset. contains 5354 high-resolution color and grey images of different texture and object categories.
+## Regularization
+Gaussian noise has been added to the encoded features from the transformer for regularization.
+
+With added noise, PRO scores significantly surpass those without noise.
+## Train (Command Line)
+```bash
+python train.py -p "hazelnut"
+```
+## License
+This project is under the Apache 2.0 license. See [LICENSE](./LICENSE) for details.
