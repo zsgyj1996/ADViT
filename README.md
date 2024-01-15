@@ -22,17 +22,8 @@ The network is inspired from [Vision Transformer](https://openreview.net/pdf?id=
 $ git clone https://github.com/zsgyj1996/ADViT.git
 $ pip install opencv-python
 $ pip install scipy
-
 # pytorch
 $ pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
-
-#install faiss
-# CPU-only version（currently available on Linux, OSX, and Windows）
-$ conda install -c pytorch faiss-cpu
-# GPU(+CPU) version （containing both CPU and GPU indices, is available on Linux systems）
-$ conda install -c pytorch faiss-gpu
-# or for a specific CUDA version
-$ conda install -c pytorch faiss-gpu cudatoolkit=10.2 # for CUDA 10.2 
 ```
 ## Train (Command Line)
 ```bash
