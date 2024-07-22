@@ -33,7 +33,7 @@ python train.py -p "hazelnut"
 ```
 ## 📦 Datasets
 **[MVTec Dataset](https://www.mvtec.com/company/research/datasets/mvtec-ad)** - Real world anomaly dataset. contains 5354 high-resolution color and grey images of different texture and object categories.
-## Regularization
+## 💻 Regularization
 Gaussian noise has been added to the encoded features from the transformer for regularization.
 
 With added noise, PRO scores significantly surpass those without noise.
