@@ -9,7 +9,7 @@
 Visual anomaly detection and localization are essential tasks in many safety-critical real-world scenarios. Our approach involves a transformer network with an association divergence, combining elements of patch embedding and a reconstruction-based method. We face challenges in capturing rich associations between abnormal patches and the entire image, as anomalies primarily focus on the adjacent patches. However, the nontrivial associations between normal patches and the entire image can be easily expressed by the self-attention weights of each patch. We use a minimax strategy to amplify this association divergence, inherently distinguishing between normal and abnormal patches and preserving the positional information of the split patches, which is then processed by a Gaussian mixture density network to pinpoint the regions of anomalies. Extensive experiments conducted on the industrial inspection dataset demonstrate that the proposed method significantly improves visual anomaly detection and localization performance compared to the competing methods.
 </p>
 
-## 🪧 Architecture
+## ⭐ Architecture
 <div style="display:flex; justify-content:space-between;">
     <img src="image/vit.png" width="60%">
     <img src="image/result.png" width="38%">
